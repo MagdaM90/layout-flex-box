@@ -1,0 +1,35 @@
+@media all and (max-width: 992px) {
+    #main {
+        width: 100%;
+        flex-flow: row wrap;
+    }
+    #main > article {
+        order: 1;
+        flex: 2 1 70%;
+    }
+    #main > aside {
+        order: 2;
+        flex: 2 1 30%;
+    }
+    #main > nav {
+        order: 3;
+        flex: 100%;
+        height: 25vh;
+        }
+}
+
+@media all and (max-width: 768px) {
+    #main {
+        width: 100%;
+        flex-flow: column;
+    }
+    #main > article,
+    #main > aside,
+    #main > nav {
+        order: 0;
+    }
+    #main > aside,
+    #main > nav {
+        height: 25vh;
+    }
+}

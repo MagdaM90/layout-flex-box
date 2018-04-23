@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    color: #fff;
+    text-transform: uppercase;
+    overflow: hidden;
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+}
+
+header {
+    background-color: darkorange;
+
+}
+
+header,
+footer {
+    width: 100%;
+    padding: 10px;
+}
+
+#main {
+    display: flex;
+    flex-flow: row;
+
+}
+
+#main > article {
+    order: 2;
+    flex: 3 1 50%;
+    background-color: darkturquoise;
+}
+
+#main > nav {
+    order: 1;
+    flex: 1 6 25%;
+    background-color: limegreen;
+}
+
+#main > aside {
+    order: 3;
+    flex: 1 6 25%;
+    background-color: deeppink;
+}
+
+footer {
+    background-color: darkmagenta;
+
+}
